@@ -1,1 +1,1 @@
-# Artificial Knowledge and Information Retrival Assistant
+# Artificial Knowledge and Information Retrieval Assistant
