@@ -1,0 +1,23 @@
+slots:
+  name:
+    type: text
+
+intents:
+- greet
+- bye
+- get_name
+
+actions:
+- utter_greet
+- utter_bye
+
+entities:
+- name
+  
+templates:
+  utter_greet:
+  - text: Hello! Akira here. How can I help you today?
+  - text: Hola! Akira at your service. How may I help you?
+  - text: Hi there. I am Akira, your virtual assistant. How may I help you?
+  utter_bye:
+  - text: Bye! Until next time
