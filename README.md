@@ -14,3 +14,30 @@ Basic objectives include creation of a bot that can:
 - Suggest new ideas for viral content creation based on latest online trends.
 
 The bot is being built in python using the open source rasa stack. Stay tuned as we update the project from time to time.
+
+### General Instructions
+
+The follows commands can be used in terminal/cmd/anaconda prompt
+
+- To train the nlu model:
+
+`python -m rasa_nlu.train -c nlu_config.yml --data data/nlu.md -o models --fixed_model_name nlu --project current --verbose`
+
+- To train the core dialog management model:
+
+`python -m rasa_core.train -d domain.yml -s data/stories.md -o models/dialogue -c policies.yml`
+
+- To run the bot in cmd/anaconda prompt/terminal:
+
+`python -m rasa_core.run -d models/dialogue -u models/current/nlu/ --endpoints endpoints.yml`
+
+- To run the bot in interactive learning mode:
+
+`python -m rasa_core.train interactive --core models/dialogue --nlu models/current/nlu --endpoints endpoints.yml`
+
+### Developer Instructions
+Current Objectives: 
+- Add more nlu data for different general conversational intents
+- Add more general conversational stories
+- Implement weather-bot into akira
+- Modify the domain file accordingly
