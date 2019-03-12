@@ -21,11 +21,15 @@ The follows commands can be used in terminal/cmd/anaconda prompt
 
 - To train the nlu model:
 
-`python -m rasa_nlu.train -c nlu_config.yml --data data/nlu.md -o models --fixed_model_name nlu --project current --verbose`
+`python -m rasa_nlu.train -c config.yml --data data/nlu.md -o models --fixed_model_name nlu --project current --verbose`
 
 - To train the core dialog management model:
 
 `python -m rasa_core.train -d domain.yml -s data/stories.md -o models/dialogue -c policies.yml`
+
+- To run the server
+
+`python -m rasa_core_sdk.endpoint --actions actions`
 
 - To run the bot in cmd/anaconda prompt/terminal:
 
