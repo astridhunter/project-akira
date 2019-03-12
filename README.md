@@ -39,5 +39,5 @@ The follows commands can be used in terminal/cmd/anaconda prompt
 Current Objectives: 
 - Add more nlu data for different general conversational intents
 - Add more general conversational stories
-- Implement weather-bot into akira
+- Implement various custom actions into akira
 - Modify the domain file accordingly
