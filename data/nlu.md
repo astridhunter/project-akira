@@ -52,16 +52,16 @@
 - [Aditya](name) here
 
 ## intent:twitter_trend_query
-- What are the Twitter trends at [Chennai](location)
-- Send me Twitter trends in [Mumbai](location)
+- What are the twitter trends at [Chennai](location)
+- Send me twitter trends in [Mumbai](location)
 - What's trending on Twitter?
-- Give me Twitter trends at my place.
-- Trending news on Twitter please at [Delhi](location)
-- What is trending in Twitter?
-- In [India](location)
+- Give me twitter trends at my place.
+- trending news on Twitter please at [Delhi](location)
+- What is trending on Twitter?
 - What is Trending in [Chennai](location) on Twitter?
 - Trends on Twitter please
-- At [Mumbai](location)
+- get me the latest twitter trends
+- What is hot on twitter now?
 
 ##intent:thank
 - Thank you
