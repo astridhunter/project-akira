@@ -63,9 +63,32 @@
 - Trends on Twitter please
 - At [Mumbai](location)
 
-##intent:thank
+## intent:thank
 - Thank you
 - Thanks
 - Thank you very much
 - I'm grateful
 - I owe you one
+
+## intent:ask_weather
+- how's the weather?
+- what's the weather like?
+- what is the weather like right now?
+- what’s it like outside?
+- what's the weather forecast?
+- how's the weather in [Bangkok](location)?
+- what's the weather like in [London](location)?
+- what is the weather like right now at [Paris](location)?
+- what's the weather forecast for [Dubai](location)?
+- what is the weather forecast?
+- how are the weather conditions in [Delhi](location) like?
+- how is the weather in [Rome](location)?
+- i am talking about [Trichy](location)
+- how is the weather in [Anterdam](location) like?
+- i live in [Singapore](location)
+- [New York](location)
+- for [Tokyo](location)
+- in [Chennai](location)
+- in [Sydney](location)
+- In [Amsterdam](location)
+
