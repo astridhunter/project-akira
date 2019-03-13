@@ -1,10 +1,14 @@
 ## greet
 * greet
-  - utter_greet
+    - utter_greet
 
 ## bye
 * bye
-  - utter_bye
+    - utter_bye
+
+## thank
+* thank
+    - utter_welcome
 
 ## Twitter Trends 01
 * greet

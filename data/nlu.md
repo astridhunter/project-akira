@@ -62,3 +62,10 @@
 - What is Trending in [Chennai](location) on Twitter?
 - Trends on Twitter please
 - At [Mumbai](location)
+
+##intent:thank
+- Thank you
+- Thanks
+- Thank you very much
+- I'm grateful
+- I owe you one
