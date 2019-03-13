@@ -34,20 +34,22 @@
 
 ## Weather Bot 01
 * greet
-   - utter_greet
+    - utter_greet
 * ask_weather
-   - utter_ask_location
-* ask_weather{"city":"London"}
-   - slot{"city": "London"}
-   - action_get_weather
+    - utter_ask_location
+* ask_weather{"location":"London"}
+    - slot{"location": "London"}
+    - action_get_weather
+    - slot{"location": "London"}
 * goodbye
-   - utter_goodbye
+    - utter_bye
 
 ## Weather Bot 02
 * greet
-   - utter_greet
-* ask_weather{"city":"Paris"}
-   - slot{"city": "Paris"}
-   - action_get_weather
+    - utter_greet
+* ask_weather{"location":"Paris"}
+    - slot{"location": "Paris"}
+    - action_get_weather
+    - slot{"location": "Paris"}
 * goodbye
-   - utter_goodbye 
+    - utter_bye  
