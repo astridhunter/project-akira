@@ -51,7 +51,7 @@
 - My name is [Ram Shankar](name)
 - [Aditya](name) here
 
-## intent:trend_query_loc
+## intent:twitter_trend_query
 - What are the Twitter trends at [Chennai](location)
 - Send me Twitter trends in [Mumbai](location)
 - What's trending on Twitter?

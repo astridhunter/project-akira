@@ -15,7 +15,7 @@ access_token_secret = 'YrlQdykFPeybRP92qgla3ZZ8qnJDIgaFKgVfdTEu5qjiZ'
 
 class ActionGetTrends(Action):
     def name(self):
-        return "action_get_trends"
+        return "action_get_twitter_trends"
 
     def run(self, dispatcher, tracker, domain):
         city = tracker.get_slot('location')
