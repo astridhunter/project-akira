@@ -42,7 +42,7 @@
 - alright bye then
 - bye bye
 
-## get_name
+## intent:get_name
 - I am [Adam](name)
 - I am [Tony](name)
 - This is [Steve](name) here
@@ -50,3 +50,15 @@
 - im [Amy](name)
 - My name is [Ram Shankar](name)
 - [Aditya](name) here
+
+## intent:trend_query_loc
+- What are the Twitter trends at [Chennai](location)
+- Send me Twitter trends in [Mumbai](location)
+- What's trending on Twitter?
+- Give me Twitter trends at my place.
+- Trending news on Twitter please at [Delhi](location)
+- What is trending in Twitter?
+- In [India](location)
+- What is Trending in [Chennai](location) on Twitter?
+- Trends on Twitter please
+- At [Mumbai](location)
