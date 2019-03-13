@@ -8,10 +8,10 @@ import requests
 import json
 import tweepy
 
-consumer_key = 'WPKbUCLAEuYlf1gEPavI0YQmJ'
-consumer_secret = 'Y18jXjayFQmpeeVaiZSyKBwQSUjCI0rmP3O8fvEE5N84Lop3Td'
-access_token = '3438102134-1VH2PeR2uijEOxg54YBbULyRJHwKYp8aW8BW4tH'
-access_token_secret = 'YrlQdykFPeybRP92qgla3ZZ8qnJDIgaFKgVfdTEu5qjiZ'
+consumer_key = 'YOUR CONSUMER KEY'
+consumer_secret = 'YOUR CONSUMER SECRET'
+access_token = 'ACCESS TOKEN'
+access_token_secret = 'TOKEN SECRET'
 
 class ActionGetTrends(Action):
     def name(self):
