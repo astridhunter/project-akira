@@ -1,23 +1,39 @@
 slots:
   name:
     type: text
+  location:
+    type: text
 
 intents:
 - greet
 - bye
+- thank
 - get_name
+- twitter_trend_query
 
 actions:
 - utter_greet
 - utter_bye
+- action_get_twitter_trends
+- utter_ask_location
+- utter_welcome
+
 
 entities:
 - name
+- location
   
 templates:
   utter_greet:
-  - text: Hello! Akira here. How can I help you today?
-  - text: Hola! Akira at your service. How may I help you?
-  - text: Hi there. I am Akira, your virtual assistant. How may I help you?
+    - text: Hello! Akira here. How can I help you today?
+    - text: Hola! Akira at your service. How may I help you?
+    - text: Hi there. I am Akira, your virtual assistant. How may I help you?
   utter_bye:
-  - text: Bye! Until next time
+    - text: Bye! Until next time
+  utter_ask_location:
+    - text: In which location?
+  utter_welcome:
+    - text: You are welcome.
+    - text: Happy to help :)
+    - text: Happy to know.
+    - text: I am always at your service.

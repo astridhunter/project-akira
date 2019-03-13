@@ -1,0 +1,5 @@
+.vscode/
+__pycache__/
+*.log
+models/current/nlu/*
+models/dialogue/*
