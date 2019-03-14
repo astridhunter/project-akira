@@ -51,17 +51,18 @@
 - My name is [Ram Shankar](name)
 - [Aditya](name) here
 
-## intent:twitter_trend_query
+## intent:ask_twitter_trends
 - What are the twitter trends at [Chennai](location)
 - Send me twitter trends in [Mumbai](location)
-- What's trending on Twitter?
+- What's trending on twitter?
 - Give me twitter trends at my place.
-- trending news on Twitter please at [Delhi](location)
+- trending news on twitter please at [Delhi](location)
 - What is trending on Twitter?
-- What is Trending in [Chennai](location) on Twitter?
-- Trends on Twitter please
+- What is trending in [Chennai](location) on twitter?
+- Trends on twitter please
 - get me the latest twitter trends
-- What is hot on twitter now?
+- What is hot on twitter right now?
+- What is trending on twitter at [Tokyo](location)
 
 ## intent:thank
 - Thank you
@@ -85,10 +86,13 @@
 - how is the weather in [Rome](location)?
 - i am talking about [Trichy](location)
 - how is the weather in [Anterdam](location) like?
+
+## intent:give_location
 - i live in [Singapore](location)
 - [New York](location)
-- for [Tokyo](location)
-- in [Chennai](location)
-- in [Sydney](location)
-- In [Amsterdam](location)
-
+- I am from [Tokyo](location)
+- [Chennai](location)
+- I live in [Sydney](location)
+- in [Delhi](location)
+- at [Bankok](location)
+- in [Amsterdam](location)
