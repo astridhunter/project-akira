@@ -13,7 +13,7 @@
 ## Twitter Trends 01
 * greet
     - utter_greet
-* twitter_trend_query{"location": "India"}
+* ask_twitter_trends{"location": "India"}
     - slot{"location": "India"}
     - action_get_twitter_trends
     - slot{"location": "India"}
@@ -23,9 +23,9 @@
 ## Twitter Trends 02
 * greet
     - utter_greet
-* twitter_trend_query
+* ask_twitter_trends
     - utter_ask_location
-* twitter_trend_query{"location": "Chennai"}
+* ask_twitter_trends{"location": "Chennai"}
     - slot{"location": "Chennai"}
     - action_get_twitter_trends
     - slot{"location": "Chennai"}
@@ -52,4 +52,4 @@
     - action_get_weather
     - slot{"location": "Paris"}
 * goodbye
-    - utter_bye  
+    - utter_bye
