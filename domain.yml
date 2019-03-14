@@ -27,8 +27,8 @@ entities:
   
 templates:
   utter_greet:
-    - text: Hello! Akira here. How can I help you today?
-    - text: Hola! Akira at your service. How may I help you?
+    - text: Hello! your Artificial Knowledge and Information Retrival Assistant(Ps: You can just call me Akira!) here. How can I help you today?
+    - text: Hola! Akira (aka Artificial Knowledge and Information Retrival Assistant) at your service. How may I help you?
     - text: Hi there. I am Akira, your virtual assistant. How may I help you?
   utter_bye:
     - text: Bye! Until next time
