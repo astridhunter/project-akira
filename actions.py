@@ -8,16 +8,18 @@ import requests
 import json
 import tweepy
 
-consumer_key = 'YOUR CONSUMER KEY'
-consumer_secret = 'YOUR CONSUMER SECRET'
-access_token = 'ACCESS TOKEN'
-access_token_secret = 'TOKEN SECRET'
+
 
 class ActionGetTrends(Action):
     def name(self):
         return "action_get_twitter_trends"
 
     def run(self, dispatcher, tracker, domain):
+        consumer_key = 'YOUR CONSUMER KEY'
+        consumer_secret = 'YOUR CONSUMER SECRET'
+        access_token = 'ACCESS TOKEN'
+        access_token_secret = 'TOKEN SECRET'
+        
         city = tracker.get_slot('location')
 
         auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
