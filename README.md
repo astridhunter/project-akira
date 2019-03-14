@@ -39,6 +39,10 @@ The follows commands can be used in terminal/cmd/anaconda prompt
 
 `python -m rasa_core.train interactive --core models/dialogue --nlu models/current/nlu --endpoints endpoints.yml`
 
+- To generate a flowchart of the command flow making it easy to debug in graph.html
+
+`python -m rasa_core.visualize -d domain.yml -s data/stories.md -o graph.html -c config.yml`
+
 ### Developer Instructions
 Current Objectives: 
 - Add more nlu data for different general conversational intents
