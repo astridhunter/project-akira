@@ -51,7 +51,7 @@ class ActionGetWeather(Action):
     
     def run(self, dispatcher, tracker, domain):
         city = tracker.get_slot('location')
-        api_key = "374b7fbffe367b0c2974e656fdeab696"
+        api_key = "YOUR_API_KEY_HERE"
         
         skeleton = "https://api.openweathermap.org/data/2.5/weather?"
         complete_url = skeleton + "q=" + city + "&APPID=" + api_key
