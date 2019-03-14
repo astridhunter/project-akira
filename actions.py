@@ -8,16 +8,18 @@ import requests
 import json
 import tweepy
 
-consumer_key = 'YOUR CONSUMER KEY'
-consumer_secret = 'YOUR CONSUMER SECRET'
-access_token = 'ACCESS TOKEN'
-access_token_secret = 'TOKEN SECRET'
+
 
 class ActionGetTrends(Action):
     def name(self):
         return "action_get_twitter_trends"
 
     def run(self, dispatcher, tracker, domain):
+        consumer_key = 'YOUR CONSUMER KEY'
+        consumer_secret = 'YOUR CONSUMER SECRET'
+        access_token = 'ACCESS TOKEN'
+        access_token_secret = 'TOKEN SECRET'
+        
         city = tracker.get_slot('location')
 
         auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
@@ -42,5 +44,31 @@ class ActionGetTrends(Action):
         
         except tweepy.error.TweepError as err:
             dispatcher.utter_message("Sorry, I don't have access to that.")
+
+        return [SlotSet("location", city)]
+
+class ActionGetWeather(Action):
+    def name(self):
+        return "action_get_weather"
+    
+    def run(self, dispatcher, tracker, domain):
+        city = tracker.get_slot('location')
+        api_key = "YOUR_API_KEY_HERE"
+        
+        skeleton = "https://api.openweathermap.org/data/2.5/weather?"
+        complete_url = skeleton + "q=" + city + "&APPID=" + api_key
+        
+        response = requests.get(complete_url)
+
+        data = response.json()
+        
+        x=data['main']
+        temp = round(x['temp'] - 273.15, 2)
+        place = data["name"]
+        x = data['weather']
+        desc = x[0]['main']
+
+        weather_data = "It's {}*C currently in {}. The weather can be described as {}".format(temp, place, desc)
+        dispatcher.utter_message(weather_data)
 
         return [SlotSet("location", city)]

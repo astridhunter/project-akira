@@ -14,9 +14,10 @@ intents:
 actions:
 - utter_greet
 - utter_bye
-- action_get_twitter_trends
 - utter_ask_location
 - utter_welcome
+- action_get_twitter_trends         #Custom Actions Start Here
+- action_get_weather
 
 
 entities:
