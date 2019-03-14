@@ -9,7 +9,8 @@ intents:
 - bye
 - thank
 - get_name
-- twitter_trend_query
+- ask_twitter_trends
+- give_location
 
 actions:
 - utter_greet
