@@ -85,7 +85,6 @@
 - what is the weather like right now?
 - what’s it like outside?
 - what's the weather forecast?
-- is it raining at [Paris](location)?
 - how's the weather in [Bangkok](location)?
 - what's the weather like in [London](location)?
 - what is the weather like right now at [Paris](location)?
@@ -93,7 +92,6 @@
 - what is the weather forecast?
 - how are the weather conditions in [Delhi](location) like?
 - how is the weather in [Rome](location)?
-- i am talking about [Trichy](location)
 - how is the weather in [Amsterdam](location) like?
 
 ## intent:give_location
