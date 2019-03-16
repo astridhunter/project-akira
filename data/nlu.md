@@ -29,10 +29,14 @@
 - hello friend
 - Hello there
 - hi
+- hiya
 
 ## intent:bye
 - bye
+- see you
+- see ya
 - good bye
+- goodbye
 - see you later
 - talk to you later
 - ttyl
@@ -45,11 +49,13 @@
 ## intent:get_name
 - I am [Adam](name)
 - I am [Tony](name)
+- This is [Amy](name)
 - This is [Steve](name) here
 - I'm [Steven](name)
 - im [Amy](name)
 - My name is [Ram Shankar](name)
 - [Aditya](name) here
+- myself [Aditya](name)
 
 ## intent:ask_twitter_trends
 - What are the twitter trends at [Chennai](location)
@@ -67,6 +73,8 @@
 ## intent:thank
 - Thank you
 - Thanks
+- Thanks a lot
+- Thanks a ton
 - Thank you very much
 - I'm grateful
 - I owe you one
@@ -77,6 +85,7 @@
 - what is the weather like right now?
 - what’s it like outside?
 - what's the weather forecast?
+- is it raining at [Paris](location)?
 - how's the weather in [Bangkok](location)?
 - what's the weather like in [London](location)?
 - what is the weather like right now at [Paris](location)?
@@ -85,7 +94,7 @@
 - how are the weather conditions in [Delhi](location) like?
 - how is the weather in [Rome](location)?
 - i am talking about [Trichy](location)
-- how is the weather in [Anterdam](location) like?
+- how is the weather in [Amsterdam](location) like?
 
 ## intent:give_location
 - i live in [Singapore](location)
@@ -94,5 +103,7 @@
 - [Chennai](location)
 - I live in [Sydney](location)
 - in [Delhi](location)
-- at [Bankok](location)
+- at [Bangkok](location)
 - in [Amsterdam](location)
+- I'm at [Trichy](location)
+- At [Chennai](location) right now
