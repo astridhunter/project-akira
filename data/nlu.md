@@ -105,3 +105,10 @@
 - in [Amsterdam](location)
 - I'm at [Trichy](location)
 - At [Chennai](location) right now
+
+## intent:ask_number_fact
+- Tell me something intresting about [7](number)
+- Something intresting about [9](number)
+- tell me a fact about [20](number)
+- tell a fact about number [100](number)
+- a fact about [1729](number)

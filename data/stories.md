@@ -53,3 +53,17 @@
     - slot{"location": "Paris"}
 * goodbye
     - utter_bye
+
+## Number Fact 1
+* greet
+	- utter_greet
+* ask_number_fact{"number":"7"}
+	- slot{"number":"7"}
+	- action_get_number_fact
+* goodbye
+	- utter_bye
+
+## Number Fact 2
+* ask_number_fact{"number":"9"}
+    - slot{"number":"9"}
+    - action_get_number_fact

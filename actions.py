@@ -10,7 +10,7 @@ import tweepy
 
 
 
-class ActionGetTrends(Action):
+class Action_Get_Trends(Action):
     def name(self):
         return "action_get_twitter_trends"
 
@@ -47,7 +47,7 @@ class ActionGetTrends(Action):
 
         return [SlotSet("location", city)]
 
-class ActionGetWeather(Action):
+class Action_Get_Weather(Action):
     def name(self):
         return "action_get_weather"
     
@@ -72,3 +72,25 @@ class ActionGetWeather(Action):
         dispatcher.utter_message(weather_data)
 
         return [SlotSet("location", city)]
+
+class Action_Get_Number_Fact(Action):
+    def name(self):
+        return "action_get_number_fact"
+
+    def run(self, dispatcher, tracker, domain):
+        number = tracker.get_slot('number')
+        API_KEY = "bb3aca8d77msh4026dbb59284057p1a72a8jsnc72f571376d8"
+        
+        url = "https://numbersapi.p.rapidapi.com/"+number+"/trivia?fragment=true&notfound=floor&json=true"
+        
+        response = requests.get( url,
+        headers={
+            "X-RapidAPI-Host": "numbersapi.p.rapidapi.com",
+            "X-RapidAPI-Key": API_KEY
+            }
+        )
+
+        data = response.json()
+
+        fact = data['text']
+        dispatcher.utter_message(f'An Intresting fact about {number} is that it is {fact}')

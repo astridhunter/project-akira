@@ -3,6 +3,8 @@ slots:
     type: text
   location:
     type: text
+  number:
+    type: text
 
 intents:
 - greet
@@ -11,6 +13,7 @@ intents:
 - get_name
 - ask_twitter_trends
 - give_location
+- ask_number_fact
 
 actions:
 - utter_greet
@@ -19,15 +22,17 @@ actions:
 - utter_welcome
 - action_get_twitter_trends         #Custom Actions Start Here
 - action_get_weather
+- action_get_number_fact
 
 
 entities:
 - name
 - location
+- number
   
 templates:
   utter_greet:
-    - text: Hello! your Artificial Knowledge and Information Retrival Assistant(Ps: You can just call me Akira!) here. How can I help you today?
+    - text: Hello! your Artificial Knowledge and Information Retrival Assistant(Ps- You can just call me Akira!) here. How can I help you today?
     - text: Hola! Akira (aka Artificial Knowledge and Information Retrival Assistant) at your service. How may I help you?
     - text: Hi there. I am Akira, your virtual assistant. How may I help you?
   utter_bye:
