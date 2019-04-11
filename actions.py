@@ -79,7 +79,7 @@ class Action_Get_Number_Fact(Action):
 
     def run(self, dispatcher, tracker, domain):
         number = tracker.get_slot('number')
-        API_KEY = "bb3aca8d77msh4026dbb59284057p1a72a8jsnc72f571376d8"
+        API_KEY = "YOUR_API_KEY_HERE"
         
         url = "https://numbersapi.p.rapidapi.com/"+number+"/trivia?fragment=true&notfound=floor&json=true"
         
